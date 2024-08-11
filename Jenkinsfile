@@ -10,7 +10,7 @@ pipeline {
             steps {
                 script {
                     echo "Pull source code from Git"
-                    git branch: 'deploytoec2', url: 'https://github.com/seunayolu/deploytoec2.git'
+                    git credentialsId: 'Git', branch: 'deploytoec2', url: 'https://github.com/seunayolu/deploytoec2.git'
                 }
             }
         }
