@@ -5,8 +5,8 @@ pipeline {
         EC2_IP = '18.171.184.51'
     }
 
-    /*stages {
-        stage ('fetch code') {
+    stages {
+        /*stage ('fetch code') {
             steps {
                 script {
                     echo "Pull source code from Git"
