@@ -6,14 +6,6 @@ pipeline {
     }
 
     stages {
-        /*stage ('fetch code') {
-            steps {
-                script {
-                    echo "Pull source code from Git"
-                    git credentialsId: 'Git', branch: 'deploytoec2', url: 'https://github.com/seunayolu/deploytoec2.git'
-                }
-            }
-        }*/
         
         stage ('deploy to EC2') {
             steps {
