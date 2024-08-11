@@ -5,7 +5,7 @@ pipeline {
         EC2_IP = '18.171.184.51'
     }
 
-    stages {
+    /*stages {
         stage ('fetch code') {
             steps {
                 script {
@@ -13,7 +13,7 @@ pipeline {
                     git credentialsId: 'Git', branch: 'deploytoec2', url: 'https://github.com/seunayolu/deploytoec2.git'
                 }
             }
-        }
+        }*/
         
         stage ('deploy to EC2') {
             steps {
